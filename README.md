@@ -1,0 +1,4 @@
+- Persoon 1: Kyano Dekens
+- Persoon 2: Ertay Ozver
+- Persoon 3: Luca Peters
+- Persoon 4: Achraf Haboub
