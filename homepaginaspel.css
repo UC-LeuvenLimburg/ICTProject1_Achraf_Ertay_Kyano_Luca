@@ -1,0 +1,39 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    user-select: none;
+  }
+  .nav-link.active {
+    background-color: #000000;
+    border-radius: 0.375rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .titel {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  header .container {
+    position: relative;
+  }
+
+  .logo {
+    position: absolute; /* Zorgt ervoor dat het los van andere elementen wordt gepositioneerd */
+    left: -110px; /* Plaatst het logo helemaal links met wat marge */
+    max-height: 70px; /* Vergroot het logo */
+  }
+  .btn-primary {
+    background-color: black; /* Zet de achtergrondkleur naar zwart */
+    border-color: rgb(0, 0, 0); /* Zet de randkleur naar zwart */
+    color: rgb(255, 255, 255); /* Zet de tekstkleur naar wit */
+  }
+  
+  /* Hover effect voor de nieuwe knop */
+  .btn-primary:hover {
+    background-color: darkgray; /* Zet de achtergrondkleur naar donkergrijs bij hover */
+    border-color: darkgray; /* Zet de randkleur naar donkergrijs bij hover */
+  }
+   
