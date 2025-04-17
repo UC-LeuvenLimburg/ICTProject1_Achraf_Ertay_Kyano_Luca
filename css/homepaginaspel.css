@@ -15,6 +15,7 @@
     transform: translateX(-50%);
     font-size: 1.5rem;
     font-weight: bold;
+    color: rgb(0, 141, 229);
   }
   header .container {
     position: relative;
@@ -30,10 +31,27 @@
     border-color: rgb(0, 0, 0); /* Zet de randkleur naar zwart */
     color: rgb(255, 255, 255); /* Zet de tekstkleur naar wit */
   }
+  .paragraaf-dik {
+    font-weight: bold;
+    color: rgb(0, 141, 229);
+  }
   
   /* Hover effect voor de nieuwe knop */
   .btn-primary:hover {
     background-color: darkgray; /* Zet de achtergrondkleur naar donkergrijs bij hover */
     border-color: darkgray; /* Zet de randkleur naar donkergrijs bij hover */
   }
+  .scherm-blok {
+    margin-top: 750px; /* pas de waarde aan naar wens */
+  }
+
+  .nav-link {
+    transition: background-color 0.3s, color 0.3s;
    
+  }
+  
+  .nav-link:hover {
+    background-color: rgb(0, 141, 229);
+    color: black !important;
+    border-radius: 1rem;
+  }
