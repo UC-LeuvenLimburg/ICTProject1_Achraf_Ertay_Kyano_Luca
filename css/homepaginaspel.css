@@ -1,57 +1,192 @@
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    user-select: none;
-  }
-  .nav-link.active {
-    background-color: #000000;
-    border-radius: 0.375rem;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-  .titel {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: rgb(0, 141, 229);
-  }
-  header .container {
-    position: relative;
-  }
 
-  .logo {
-    position: absolute; /* Zorgt ervoor dat het los van andere elementen wordt gepositioneerd */
-    left: -110px; /* Plaatst het logo helemaal links met wat marge */
-    max-height: 70px; /* Vergroot het logo */
-  }
-  .btn-primary {
-    background-color: black; /* Zet de achtergrondkleur naar zwart */
-    border-color: rgb(0, 0, 0); /* Zet de randkleur naar zwart */
-    color: rgb(255, 255, 255); /* Zet de tekstkleur naar wit */
-  }
-  .paragraaf-dik {
-    font-weight: bold;
-    color: rgb(0, 141, 229);
-  }
-  
-  /* Hover effect voor de nieuwe knop */
-  .btn-primary:hover {
-    background-color: darkgray; /* Zet de achtergrondkleur naar donkergrijs bij hover */
-    border-color: darkgray; /* Zet de randkleur naar donkergrijs bij hover */
-  }
-  .scherm-blok {
-    margin-top: 750px; /* pas de waarde aan naar wens */
-  }
 
-  .nav-link {
-    transition: background-color 0.3s, color 0.3s;
-   
-  }
+
+
+
+/* Algemene stijl voor de navbar */
+.mijn-navbar {
+  background-color: #1e1e1e; /* Donkere achtergrondkleur */
+  padding: 10px 0; /* Wat meer ruimte boven en onder de navbar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+}
+
+/* Navbar links en merknaam */
+.mijn-navbar .nav-link,
+.mijn-navbar .navbar-brand {
+  color: rgb(0, 221, 255) !important; /* Lichte kleur voor de tekst */
+  font-weight: bold; /* Maak de tekst vetgedrukt */
+  transition: color 0.3s ease; /* Animatie voor kleurverandering */
+}
+
+/* Hover-effect voor de nav-link */
+.mijn-navbar .nav-link:hover {
+  color: #ffffff !important; /* Witte kleur op hover */
+}
+
+/* Navbar merknaam centraal positioneren */
+.navbar-brand {
+  position: absolute; /* Absoluut positioneren voor centreren */
+  top: 50%;           /* Verticaal centreren */
+  left: 50%;          /* Horizontaal centreren */
+  transform: translate(-50%, -50%); /* Exact centreren van het element */
+  font-size: 1.5rem; /* Grotere tekstgrootte */
+  text-transform: uppercase; /* Hoofdletters voor de merknaam */
+  letter-spacing: 2px; /* Iets meer ruimte tussen de letters */
+  transition: transform 0.3s ease; /* Animatie voor positionering */
+}
+
+/* Verander de positie van de navbar-brand bij hover */
+.navbar-brand:hover {
+  transform: translate(-50%, -50%) scale(1.1); /* Vergroot bij hover voor extra effect */
+}
+
+/* Dropdown menu styling */
+.navbar-nav .dropdown-menu {
+  background-color: #333; /* Donkere achtergrond voor dropdown */
+  border-radius: 5px; /* Ronde hoeken voor dropdown */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schaduw voor dropdown */
+}
+
+/* Styling van de zoekbalk */
+.mijn-navbar .form-control {
+  border-radius: 20px; /* Ronde hoeken voor de zoekbalk */
+  padding: 8px 15px; /* Extra padding voor de zoekbalk */
+  border: none; /* Geen rand */
+  background-color: #333; /* Donkere achtergrond voor input */
+  color: white; /* Witte tekst in de input */
+}
+
+.mijn-navbar .btn-outline-success {
+  border-radius: 20px; /* Ronde knoppen */
+  border-color: #0dcaf0; /* Kleur van de rand */
+  color: #0dcaf0; /* Kleur van de tekst */
+  transition: background-color 0.3s, color 0.3s; /* Transitie voor de knop */
+}
+
+/* Hover-effect voor de zoekknop */
+.mijn-navbar .btn-outline-success:hover {
+  background-color: #0dcaf0; /* Verander de achtergrondkleur bij hover */
+  color: #1e1e1e; /* Verander de tekstkleur bij hover */
+}
+/* Verander de kleur van de hamburger-icoon naar zwart */
+.navbar-toggler-icon {
+  background-color: #0dcaf0; /* Zwart voor de icoon */
+}
+.spel-start-blok {
+  text-align: center;
+  margin-top: 100px;
+}
+.spel-start-blok p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #0dcaf0;
+}
+
+.start-knop {
+  background-color: #000000;
+  color: #0dcaf0;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
   
-  .nav-link:hover {
-    background-color: rgb(0, 141, 229);
-    color: black !important;
-    border-radius: 1rem;
+}
+.start-knop:hover {
+  background-color: #0dcaf0;
+  transform: scale(1.05);
+}
+
+
+.spel-afbeelding {
+  width: 200px;         /* Pas de breedte aan */
+  height: auto;         /* Zorg dat de verhoudingen kloppen */
+  border-radius: 20px;  /* Maak de hoeken afgerond */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Voeg een schaduw toe */
+  margin-bottom: 20px;  /* Ruimte onder de afbeelding */
+  transition: transform 0.3s ease;
+}
+.zoom-animatie {
+  width: 200px;
+  height: auto;
+  animation: zoomInOut 3s ease-in-out infinite;
+}
+@keyframes zoomInOut {
+  0%, 100% {
+    transform: scale(1);
   }
+  50% {
+    transform: scale(1.1); /* Zoom iets in */
+  }
+}
+
+
+
+.afbeelding-kaarten {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;    
+  width: 100%;
+  padding: 0 40px;
+  margin-top: 15px;        
+  box-sizing: border-box;
+  gap: -10px;   }                
+
+
+
+
+
+@keyframes draaien {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Voeg deze stijl toe aan de kaart-klasse */
+.afbeelding-kaarten img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+  /* animatie-instellingen */
+  animation: draaien 5s linear infinite;  /* 5s = duur, linear = constante snelheid */
+}
+@media (max-width: 600px) {
+  .afbeelding-kaarten {
+    flex-direction: column;       /* kaarten onder elkaar */
+    align-items: center;          /* centreren op mobiel */
+    gap: 20px;                    /* ruimte tussen kaarten */
+    padding: 20px;                /* wat binnenmarge */
+  }
+}
+
+#over-ons-sectie h2 {
+  font-weight: bold;
+  color: #0dcaf0; /* Kleur voor de kopjes (bijv. blauw) */
+}
+
+#over-ons-sectie p {
+  font-weight: bold;
+  color: #0dcaf0; /* Kleur voor de paragrafen (bijv. rood) */
+}
+
+
+
+
+#footer-size {
+  background-color: #ffffff;
+  margin-right: -100px;
+  margin-left: -95px;
+
+  
+}
+
