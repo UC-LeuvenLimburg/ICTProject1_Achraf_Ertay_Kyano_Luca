@@ -1,121 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="icon" href="/images/logo kaartenspel.png">
-  <title>De slimme dobbelsteen</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/Images/logo kaartenspel.png">
+  <title>De slimme dobbelsteen </title>
 
   <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Jouw eigen CSS -->
-  <link rel="stylesheet" href="/css/homepaginaspel.css" />
+  <link rel="stylesheet" href="/css/homepaginaspel.css">
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- Aangepaste Navbar -->
   <nav class="navbar navbar-expand-lg mijn-navbar">
     <div class="container-fluid">
-      <a class="navbar-brand mx-auto">De slimme dobbelsteen</a>
+      <a class="navbar-brand mx-auto " >De slimme dobbelsteen</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" href="#top">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#Spelregels">Spelregels</a></li>
-          <li class="nav-item"><a class="nav-link" href="#Over-ons">Over ons</a></li>
-          <li class="nav-item"><a class="nav-link" href="/html/html uitleg kaarten.html">Soorten kaarten</a></li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#top">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Spelregels">Spelregels</a>
+          </li>
+          <!-- Toegevoegde extra link -->
+          <li class="nav-item">
+            <a class="nav-link" href="#Over-ons"> Over ons  </a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="/html/html uitleg kaarten.html"> Soorten kaarten </a>
+          </li>
+          
         </ul>
+      </div>
+          
+          
+          
+        
+        </ul>
+        
       </div>
     </div>
   </nav>
-
-  <!-- Startblok -->
-  <div class="spel-start-blok text-center">
-    <img src="/images/logo kaartenspel.png" alt="Logo van het dobbelspel" class="spel-afbeelding zoom-animatie" />
+  <div class="spel-start-blok">
+    <img src="images/logo kaartenspel.png" alt="Dobbelsteen" class="spel-afbeelding zoom-animatie">
     <p>Klik hier om naar het spel te gaan</p>
     <button type="button" class="btn btn-primary start-knop">Start het spel</button>
   </div>
 
-  <!-- Kaarten Afbeeldingen -->
-  <div class="afbeelding-kaarten text-center">
-    <img src="/images/beurtoverslaankaart.png" class="beurtoverslaankaart" alt="Beurt overslaan kaart" />
-    <img src="/images/stealkaart.png" class="stealkaart" alt="Stealkaart" />
+
+  
+  <div class="afbeelding-kaarten">
+    <img src="/Images/beurtoverslaankaart.png" class="beurtoverslaankaart" alt="beurtoverslaankaart">
+    <img src="/Images/stealkaart.png" class="stealkaart" alt="stealkaart">
   </div>
 
-  <!-- Over ons sectie -->
-  <div class="container px-4 py-5" id="Over-ons">
-    <h2 class="mb-4">Over ons</h2>
+
+
+  <div class="container px-4 py-5" id="over-ons-sectie">
+    <h2 id ="Over-ons"class = "Over-ons" >Over ons</h2>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
       <div class="feature col">
         <div class="feature-icon bg-primary bg-gradient">
-          <!-- Zorg dat je Bootstrap Icons laadt of dit werkt niet -->
-          <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg> -->
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
         </div>
-        <h3>Wie zijn we?</h3>
+        <h2>Wie zijn we?</h2>
         <p>Wij zijn een groep studenten die houden van spelletjes én van slimme ideeën. We wilden iets maken dat leren leuk maakt. Zo is dit dobbelspel ontstaan.</p>
+        
+         
+          
+        </a>
       </div>
       <div class="feature col">
         <div class="feature-icon bg-primary bg-gradient">
-          <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg> -->
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
         </div>
-        <h3>Waarom deze website?</h3>
+        <h2>Waarom deze website?</h2>
         <p>Deze website hoort bij ons spel. Hier kun je alles vinden: hoe het werkt, wat je nodig hebt, en straks kun je het misschien zelfs online spelen.</p>
+        
+        </a>
       </div>
       <div class="feature col">
         <div class="feature-icon bg-primary bg-gradient">
-          <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg> -->
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
         </div>
-        <h3>Wat willen we bereiken?</h3>
-        <p>We willen dat je op een toffe manier slimmer wordt. Niet saai uit een boek, maar door gewoon te spelen. Zo leer je zonder dat je het doorhebt.</p>
+        <h2>Wat willen we bereiken?</h2>
+        <p>We willen dat je op een toffe manier slimmer wordt. Niet saai uit een boek, maar door gewoon te spelen. Zo leer je zonder dat je het doorhebt.
+
+        </p>
+        
+        </a>
       </div>
     </div>
   </div>
 
-  <!-- Spelregels sectie -->
-  <div class="container px-4 py-5" id="Spelregels">
-    <h2 class="pb-2 border-bottom">Spelregels</h2>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-      <div class="col d-flex align-items-start">
-        <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em"><use xlink:href="#bootstrap"/></svg> -->
-        <div>
-          <h3>60 kaarten (10 per vak)</h3>
-          <p>In ons spel zul je 60 kaarten vinden waarvan 10 per vak. Er zullen zowel moeilijke als makkelijke vragen aanwezig zijn.</p>
-        </div>
+
+  <div class="Spelregels"></div>
+
+<div class="container px-4 py-5" id="Spelregels">
+  <h2 class="pb-2 border-bottom">Spelregels</h2>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true"><use xlink:href="#bootstrap"/></svg>
+      <div>
+        <h3 class="titel1"> 60 kaarten(10 per vak)</h3>
+        <p> In ons spel zul je 60 kaarten vinden waarvan 10 per vak. Er zullen zowel moeilijke als makkelijke vragen aanwezig zijn. </p>
       </div>
-      <div class="col d-flex align-items-start">
-        <div>
-          <h3>Puntenverdeling</h3>
-          <p>Punten verdien je door de vragen juist te beantwoorden. Bij makkelijke vragen krijg je 1 punt, bij moeilijke vragen krijg je 2 punten.</p>
-        </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true"><use xlink:href="#cpu-fill"/></svg>
+      <div>
+        <h3 class="titel2">Puntenverdeling</h3>
+        <p>Punten verdien je door de vragen juist te beantwoorden. Bij makkelijke vragen krijg je 1 punt, bij moeilijke vragen krijg je 2 punten.</p>
       </div>
-      <div class="col d-flex align-items-start">
-        <div>
-          <h3>Soorten kaarten</h3>
-          <p>Om het spel wat leuker te maken, hebben we speciale kaarten toegevoegd. Meer informatie vind je <a href="/html/html uitleg kaarten.html">hier</a>.</p>
-        </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true"><use xlink:href="#calendar3"/></svg>
+      <div>
+        <h3 class="titel3">Soorten kaarten</h3>
+        <p>Om het spel wat leuker te maken, hebben we speciale kaarten toegevoegd. Meer informatie vind je <a href="/html/html uitleg kaarten.html">hier</a>.</p>
       </div>
-      <div class="col d-flex align-items-start">
-        <div>
-          <h3>Einde van het spel</h3>
-          <p>Wanneer elke kaart is beantwoord en de punten zijn samengeteld, is het spel voorbij. Degene met de meeste punten wint het spel.</p>
-        </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true"><use xlink:href="#home"/></svg>
+      <div>
+        <h3 class="titel4">Einde van het spel</h3>
+        <p>Wanneer elke kaart is beantwoord en de punten zijn samengeteld, is het spel voorbij. Degene met de meeste punten wint het spel.</p>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Footer -->
+
+
+
   <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <p class="col-md-4 mb-0 text-body-secondary">© 2025 Company, Inc.</p>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" width="100%"height="100px" id="footer-size" >
+      <p class="col-md-4 mb-0 text-body-secondary" id="footer-text"> 2025 Company, Inc  </p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+      </a>
+  
+      
     </footer>
   </div>
+  
+  
+
 
   <!-- Bootstrap 5 JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
