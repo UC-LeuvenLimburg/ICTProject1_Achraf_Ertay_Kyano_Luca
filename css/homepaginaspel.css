@@ -1,6 +1,11 @@
 
 
-
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
 
 
 /* Algemene stijl voor de navbar */
@@ -190,3 +195,36 @@
   
 }
 
+
+
+
+
+#Spelregels h2 {
+  color: #0dcaf0;
+  font-weight: bold;
+}
+
+/* Zet de kleur van de tekst (paragrafen) naar blauw */
+#Spelregels p {
+  color: #0dcaf0;
+  font-weight: bold;
+}
+
+
+
+.titel1 {
+  color: #0dcaf0;
+  font-weight: bold;
+}
+.titel2 {
+  color: #0dcaf0;
+  font-weight: bold;
+}
+.titel3 {
+  color: #0dcaf0;
+  font-weight: bold;
+}
+.titel4 {
+  color: #0dcaf0;
+  font-weight: bold;
+}

@@ -1,4 +1,138 @@
-h1 {
-    color: blue;
-    text-align: center;
+/* Algemene stijl voor de navbar */
+.mijn-navbar {
+    background-color: #1e1e1e; /* Donkere achtergrondkleur */
+    padding: 10px 0; /* Wat meer ruimte boven en onder de navbar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  
+  }
+  /* Navbar links en merknaam */
+.mijn-navbar .nav-link,
+.mijn-navbar .navbar-brand {
+  color: rgb(0, 221, 255) !important; /* Lichte kleur voor de tekst */
+  font-weight: bold; /* Maak de tekst vetgedrukt */
+  transition: color 0.3s ease; /* Animatie voor kleurverandering */
+}
+
+.mijn-navbar .nav-link:hover {
+    color: #ffffff !important; /* Witte kleur op hover */
+  }
+
+
+  .navbar-brand {
+    position: absolute; /* Absoluut positioneren voor centreren */
+    top: 50%;           /* Verticaal centreren */
+    left: 50%;          /* Horizontaal centreren */
+    transform: translate(-50%, -50%); /* Exact centreren van het element */
+    font-size: 1.5rem; /* Grotere tekstgrootte */
+    text-transform: uppercase; /* Hoofdletters voor de merknaam */
+    letter-spacing: 2px; /* Iets meer ruimte tussen de letters */
+    transition: transform 0.3s ease; /* Animatie voor positionering */
+  }
+
+
+  /* Verander de positie van de navbar-brand bij hover */
+.navbar-brand:hover {
+    transform: translate(-50%, -50%) scale(1.1); /* Vergroot bij hover voor extra effect */
+  }
+  
+  /* Dropdown menu styling */
+  .navbar-nav .dropdown-menu {
+    background-color: #0dcaf0; /* Donkere achtergrond voor dropdown */
+    border-radius: 5px; /* Ronde hoeken voor dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schaduw voor dropdown */
+  }
+
+  /* Styling van de zoekbalk */
+.mijn-navbar .form-control {
+    border-radius: 20px; /* Ronde hoeken voor de zoekbalk */
+    padding: 8px 15px; /* Extra padding voor de zoekbalk */
+    border: none; /* Geen rand */
+    background-color: #333; /* Donkere achtergrond voor input */
+    color: white; /* Witte tekst in de input */
+  }
+  
+  .mijn-navbar .btn-outline-success {
+    border-radius: 20px; /* Ronde knoppen */
+    border-color: #0dcaf0; /* Kleur van de rand */
+    color: #0dcaf0; /* Kleur van de tekst */
+    transition: background-color 0.3s, color 0.3s; /* Transitie voor de knop */
+  }
+  
+  /* Hover-effect voor de zoekknop */
+  .mijn-navbar .btn-outline-success:hover {
+    background-color: #0dcaf0; /* Verander de achtergrondkleur bij hover */
+    color: #1e1e1e; /* Verander de tekstkleur bij hover */
+  }
+  /* Verander de kleur van de hamburger-icoon naar zwart */
+  .navbar-toggler-icon {
+    background-color: #0dcaf0; /* Zwart voor de icoon */
+  }
+
+
+
+  .jokerkaart {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+  }
+  .jokerkaart-tekst {
+    color: #0dcaf0; 
+    font-weight: bold;
+  }
+  
+  .tekst-jk {
+    color: #0dcaf0; 
+    font-weight: bold;
+
+  }
+
+  .beurtoverslaankaart {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+  }
+  .tekst-beurtoverslaan {
+    color: #0dcaf0; 
+    font-weight: bold;
+  }
+  
+  .tekst-beurtoverslaan1 {
+    color: #0dcaf0; 
+    font-weight: bold;
+  }
+  .stealkaart {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+  }
+  .tekst-stealkaart {
+    color: #0dcaf0; 
+    font-weight: bold;
+  }
+  
+  .tekst-stealkaart1 {
+    color: #0dcaf0; 
+    font-weight: bold;
+  }
+
+
+  .jokerkaart,
+.beurtoverslaankaart,
+.stealkaart {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* zachte schaduw */
+  transition: transform 0.3s ease;
+  animation: sway 1s infinite ease-in-out alternate;
+}
+
+/* ANIMATIE DEFINITIE */
+@keyframes sway {
+  0% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
 }
