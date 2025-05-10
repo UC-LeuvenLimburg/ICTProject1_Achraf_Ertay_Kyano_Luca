@@ -6,13 +6,19 @@
     <title>Pagina 1</title>
     <link rel="stylesheet" href="/css/pagina1.css">
     <link rel="icon" href="/Images/logo kaartenspel.png">
-    
-        
-
 </head>
 <body>
     <h1>10 vragen over Webdesign</h1>
-    <p>Als de vraag beantwoord is klik op de knop om terug naar de dobbelsteen te gaan.</p>
-    <a href="/html/dobbelsteen.html">Terug naar de dobbelsteen</a>
+    <p>Beantwoord de vraag om terug te keren naar de dobbelsteen.</p>
+
+    <!-- Popup voor de vraag -->
+    <div id="popup-container" style="display: none;">
+        <h2 id="vraag-text"></h2>
+        <div id="antwoord-container"></div>
+        <p id="feedback"></p>
+    </div>
+
+    <!-- Laad JS als laatste, zodat DOM al klaar is -->
+    <script src="/javascript/pagina1.js"></script>
 </body>
 </html>

@@ -9,6 +9,7 @@ body {
     flex-direction: column;
 }
 
+
 .dice-container {
     perspective: 600px;
     margin-bottom: 20px;
@@ -106,4 +107,16 @@ button:hover {
     font-size: 24px;
     margin-top: 20px;
     font-weight: bold;
+}
+#backButton {
+    margin-top: 80px;
+    
+    padding: 10px 20px;
+    background-color: #0dcaf0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+#backButton:hover {
+  background-color: black; 
 }
