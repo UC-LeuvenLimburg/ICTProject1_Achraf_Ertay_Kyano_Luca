@@ -1,60 +1,61 @@
 const alleVragen = [
             {
                 type: "meerkeuze",
-                vraag: "wat betekent  HTML? ",
-                opties: ["HyperText Markup Language", "High-Tech Modern Language ","Hyperlink Transfer Mode Logic "],
-                correctAntwoord: "HyperText Markup Language"
+                vraag: "Welke van de volgende termen kan je direct integreren zonder extra technieken? ",
+                opties: [" x2x^2x2 ", "1x\frac{1}{x}x1 ","exe^xex "," Alle bovenstaande ",],
+                correctAntwoord: "Alle bovenstaande"
             },
             {
                 type: "juist-fout",
-                vraag: "In CSS gebruik je de eigenschap color om de tekstkleur te veranderen.",
+                vraag: "Kun je elke rationale functie altijd splitsen in afzonderlijke breuken voordat je integreert? ",
                 opties: ["Juist", "Fout"],
                 correctAntwoord: "Juist"
             },
             {
                 type: "meerkeuze",
-                vraag: "Welke van de volgende HTML-elementen wordt het meest gebruikt om de hoofdinhoud van een webpagina te structureren?",
-                opties: ["<footer>", "<header>", "<main>", "aside", ],
-                correctAntwoord: "<main>"
+                vraag: "De integraal van een snelheidsfunctie v(t) geeft de: ?",
+                opties: ["Massa", "Tijd  ", "Afstand ", "Versnelling", ],
+                correctAntwoord: "Afstand"
             },
             {
                 type: "invul",
-                vraag: "Wat is de hoofdtaak van CSS in web development? ",
-                correctAntwoord: "De stijl en opmaak van een website bepalen"
-            },
-            {
-                type: "meerkeuze",
-                vraag: "Wat is het resultaat van het gebruik van de transform eigenschap in CSS op een element? ",
-                opties: [" Het verandert de positie van het element in de lay-out, waardoor andere elementen worden verplaatst. ", "Het beïnvloedt de visuele weergave van het element zonder de lay-out van de pagina te beïnvloeden. ", "Het verhoogt de laadsnelheid van de pagina door elementen te comprimeren. ", ],
-                correctAntwoord: " Het beïnvloedt de visuele weergave van het element zonder de lay-out van de pagina te beïnvloeden. "
+                vraag: "De functie (x + 2) / (x + 1) kan worden gesplitst door ____ deling toe te passen.",
+                correctAntwoord: "polyominale "
             },
             {
                 type: "juist-fout",
-                vraag: "Een responsive webdesign betekent dat een website alleen werkt op desktops en niet op mobiele apparaten. ",
+                vraag: "Kun je de functie (x² + 2x + 3) / (x + 1) altijd zonder deling opsplitsen in losse breuken?(geldt voor 2 punten)  ",
+                opties: [" Juist", "Fout  ", ],
+                correctAntwoord: " Fout"
+            },
+            {
+                type: "juist-fout",
+                vraag: "Kun je de substitutiemethode gebruiken als de afgeleide van de gekozen substitutie niet voorkomt in de integraal? ",
                 opties: ["Juist", "Fout"],
                 correctAntwoord: "Fout"
             },
             {
                 type: "invul",
-                vraag: "Welke CSS-eigenschap bepaalt de ruimte tussen de inhoud van een element en de rand ervan? ",
-                correctAntwoord: "padding"
+                vraag: "De integraal van een snelheidsfunctie v(t)v(t)v(t) geeft de ____ die een object heeft afgelegd.",
+                correctAntwoord: "afstand"
             },
             {
                 type: "juist-fout",
-                vraag: "In JavaScript is het mogelijk om een functie zonder parameters te definiëren en deze toch aan te roepen met argumenten. .",
+                vraag: " Is het altijd nodig om de LIATE-regel te volgen bij partieel integreren?(geldt voor 2 punten) ",
                 opties: ["Juist", "Fout"],
+                correctAntwoord: "fout"
+            },
+            {
+                type: "juist-fout",
+                vraag: "Is de functie x ln(x) een goede kandidaat voor partieel integreren?  (Geldt voor 2 punten)",
+                opties: ["Juist", "Fout ", ],
                 correctAntwoord: "Juist"
             },
             {
                 type: "meerkeuze",
-                vraag: "Wat doet de z-index in CSS?  ",
-                opties: ["Verwijdert een element van de pagina ", "Bepaalt de grootte van een element", "Bepaalt de positie van een element op de Z-as (voor of achter andere elementen) ",],
-                correctAntwoord: "Bepaalt de positie van een element op de Z-as (voor of achter andere elementen) "
-            },
-            {
-                type: "invul",
-                vraag: "Wat wordt er In CSS gebruikt om ervoor te zorgen dat een element zichzelf automatisch aanpast aan de grootte van zijn inhoud, zonder dat de afmetingen expliciet hoeven te worden gedefinieerd. ",
-                correctAntwoord: "inline-block"
+                vraag: "Welke substitutie maakt de integraal ∫ x / (x² + 9) dx eenvoudiger? (Geldt voor 2 punten)",
+                opties: ["u = x² + 9", " u = x + 9  ", " u = √(x² + 9) ",],
+                correctAntwoord: "u = x² + 9"
             }
         ];
 

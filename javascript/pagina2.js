@@ -1,60 +1,61 @@
 const alleVragen = [
             {
                 type: "meerkeuze",
-                vraag: "wat betekent  HTML? ",
-                opties: ["HyperText Markup Language", "High-Tech Modern Language ","Hyperlink Transfer Mode Logic "],
-                correctAntwoord: "HyperText Markup Language"
+                vraag: "Wat is de output van het volgende C#-programma? (let x = 5; let y = x; y++ console.WriteLine(x);)",
+                opties: ["5", "6 ","foutmelding ","0",],
+                correctAntwoord: "5"
             },
             {
                 type: "juist-fout",
-                vraag: "In CSS gebruik je de eigenschap color om de tekstkleur te veranderen.",
+                vraag: "Kun je een string direct optellen met een int zonder expliciete conversie.",
                 opties: ["Juist", "Fout"],
-                correctAntwoord: "Juist"
+                correctAntwoord: "Fout"
             },
             {
                 type: "meerkeuze",
-                vraag: "Welke van de volgende HTML-elementen wordt het meest gebruikt om de hoofdinhoud van een webpagina te structureren?",
-                opties: ["<footer>", "<header>", "<main>", "aside", ],
-                correctAntwoord: "<main>"
+                vraag: "Wat doet de Console.WriteLine() methode in C#?",
+                opties: ["Het schrijft een tekst naar de console en voegt een nieuwe regel toe ", "Het schrijft een tekst naar een bestand ", "Het leest een tekst in van de console ", ],
+                correctAntwoord: "Het schrijft een tekst naar de console en voegt een nieuwe regel toe"
             },
             {
                 type: "invul",
-                vraag: "Wat is de hoofdtaak van CSS in web development? ",
-                correctAntwoord: "De stijl en opmaak van een website bepalen"
+                vraag: "Hoe kan je een waarde van een bool variable controleren ?  ",
+                correctAntwoord: "true of false"
             },
             {
                 type: "meerkeuze",
-                vraag: "Wat is het resultaat van het gebruik van de transform eigenschap in CSS op een element? ",
-                opties: [" Het verandert de positie van het element in de lay-out, waardoor andere elementen worden verplaatst. ", "Het beïnvloedt de visuele weergave van het element zonder de lay-out van de pagina te beïnvloeden. ", "Het verhoogt de laadsnelheid van de pagina door elementen te comprimeren. ", ],
-                correctAntwoord: " Het beïnvloedt de visuele weergave van het element zonder de lay-out van de pagina te beïnvloeden. "
+                vraag: "Wat gebeurt er wanneer je een null waarde probeert toe te wijzen aan een niet-nullable waarde type in C# (bijvoorbeeld een int)?  ",
+                opties: [" De waarde wordt automatisch omgezet naar 0  ", "Het programma zal crashen bij runtime  ", "Er wordt een compilatiefout gegenereerd", ],
+                correctAntwoord: "Er wordt een compilatiefout gegenereerd"
             },
             {
                 type: "juist-fout",
-                vraag: "Een responsive webdesign betekent dat een website alleen werkt op desktops en niet op mobiele apparaten. ",
+                vraag: "In C#, een foreach loop kan niet worden gebruikt met een array van primitieve types zoals int of char",
                 opties: ["Juist", "Fout"],
                 correctAntwoord: "Fout"
             },
             {
                 type: "invul",
-                vraag: "Welke CSS-eigenschap bepaalt de ruimte tussen de inhoud van een element en de rand ervan? ",
-                correctAntwoord: "padding"
+                vraag: "Welke type kan niet null zijn omdat het een waarde-type is, en dus altijd een waarde bevat.(Geldt voor 2 punten)",
+                correctAntwoord: "struct"
             },
             {
                 type: "juist-fout",
-                vraag: "In JavaScript is het mogelijk om een functie zonder parameters te definiëren en deze toch aan te roepen met argumenten. .",
+                vraag: "In C# kan een static methode toegang krijgen tot de niet-static velden van een klasse zonder een instantie van de klasse te maken.(Geldt voor 2 punten)",
                 opties: ["Juist", "Fout"],
-                correctAntwoord: "Juist"
+                correctAntwoord: "fout"
             },
             {
                 type: "meerkeuze",
-                vraag: "Wat doet de z-index in CSS?  ",
-                opties: ["Verwijdert een element van de pagina ", "Bepaalt de grootte van een element", "Bepaalt de positie van een element op de Z-as (voor of achter andere elementen) ",],
-                correctAntwoord: "Bepaalt de positie van een element op de Z-as (voor of achter andere elementen) "
+                vraag: "Wat is het gevolg van het gebruik van de ref keyword bij het doorgeven van een parameter in een C# methode? (Geldt voor 2 punten)",
+                opties: ["De parameter wordt alleen-leesbaar binnen de methode. ", "De waarde van de parameter kan worden gewijzigd binnen de methode, en de wijziging wordt buiten de methode weerspiegeld. ", "De parameter wordt automatisch geconverteerd naar nullable ",],
+                correctAntwoord: "De waarde van de parameter kan worden gewijzigd binnen de methode, en de wijziging wordt buiten de methode weerspiegeld."
             },
             {
-                type: "invul",
-                vraag: "Wat wordt er In CSS gebruikt om ervoor te zorgen dat een element zichzelf automatisch aanpast aan de grootte van zijn inhoud, zonder dat de afmetingen expliciet hoeven te worden gedefinieerd. ",
-                correctAntwoord: "inline-block"
+                type: "meerkeuze",
+                vraag: "Wat gebeurt er wanneer je probeert een struct te doorgeven naar een methode zonder gebruik te maken van ref of out, en de methode de waarde wijzigt? (Geldt voor 2 punten)",
+                opties: ["De waarde van de struct wordt automatisch aangepast in de methode, en de wijziging is zichtbaar buiten de methode. ", "De wijziging is alleen zichtbaar binnen de methode, de originele struct wordt niet gewijzigd buiten de methode. ", "De methode genereert een fout omdat struct alleen via ref of out kan worden doorgegeven. ",],
+                correctAntwoord: "De wijziging is alleen zichtbaar binnen de methode, de originele struct wordt niet gewijzigd buiten de methode. "
             }
         ];
 

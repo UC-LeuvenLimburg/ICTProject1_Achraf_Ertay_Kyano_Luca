@@ -1,60 +1,60 @@
 const alleVragen = [
             {
                 type: "meerkeuze",
-                vraag: "wat betekent  HTML? ",
-                opties: ["HyperText Markup Language", "High-Tech Modern Language ","Hyperlink Transfer Mode Logic "],
-                correctAntwoord: "HyperText Markup Language"
+                vraag: "Wat is een microcontroller? ",
+                opties: ["Een externe opslagmodule ", "Een kleine computer op een enkele chip","Een soort batterij voor elektronica"," Een grafische processor",],
+                correctAntwoord: "Een kleine computer op een enkele chip"
             },
             {
                 type: "juist-fout",
-                vraag: "In CSS gebruik je de eigenschap color om de tekstkleur te veranderen.",
-                opties: ["Juist", "Fout"],
-                correctAntwoord: "Juist"
-            },
-            {
-                type: "meerkeuze",
-                vraag: "Welke van de volgende HTML-elementen wordt het meest gebruikt om de hoofdinhoud van een webpagina te structureren?",
-                opties: ["<footer>", "<header>", "<main>", "aside", ],
-                correctAntwoord: "<main>"
-            },
-            {
-                type: "invul",
-                vraag: "Wat is de hoofdtaak van CSS in web development? ",
-                correctAntwoord: "De stijl en opmaak van een website bepalen"
-            },
-            {
-                type: "meerkeuze",
-                vraag: "Wat is het resultaat van het gebruik van de transform eigenschap in CSS op een element? ",
-                opties: [" Het verandert de positie van het element in de lay-out, waardoor andere elementen worden verplaatst. ", "Het beïnvloedt de visuele weergave van het element zonder de lay-out van de pagina te beïnvloeden. ", "Het verhoogt de laadsnelheid van de pagina door elementen te comprimeren. ", ],
-                correctAntwoord: " Het beïnvloedt de visuele weergave van het element zonder de lay-out van de pagina te beïnvloeden. "
-            },
-            {
-                type: "juist-fout",
-                vraag: "Een responsive webdesign betekent dat een website alleen werkt op desktops en niet op mobiele apparaten. ",
+                vraag: "Een microcontroller heeft altijd een extern geheugen nodig om programma's uit te voeren. ",
                 opties: ["Juist", "Fout"],
                 correctAntwoord: "Fout"
             },
             {
+                type: "meerkeuze",
+                vraag: "Wat is de taak van een GPIO-pin op een microcontroller? ",
+                opties: ["Alleen gegevens verzenden ", "Alleen gegevens ontvangen", "Zowel gegevens verzenden als ontvangen", ],
+                correctAntwoord: "Zowel gegevens verzenden als ontvangen "
+            },
+            {
                 type: "invul",
-                vraag: "Welke CSS-eigenschap bepaalt de ruimte tussen de inhoud van een element en de rand ervan? ",
-                correctAntwoord: "padding"
+                vraag: "Een microcontroller wordt vaak geprogrammeerd met de taal_________  ",
+                correctAntwoord: "C of C++"
+            },
+            {
+                type: "meerkeuze",
+                vraag: "Welk protocol wordt gebruikt voor communicatie tussen microcontrollers en sensoren met slechts twee draden?",
+                opties: [" SPI ", "I2C", " UART", "CAN", ],
+                correctAntwoord: "I2C"
             },
             {
                 type: "juist-fout",
-                vraag: "In JavaScript is het mogelijk om een functie zonder parameters te definiëren en deze toch aan te roepen met argumenten. .",
+                vraag: "Een microcontroller kan meerdere taken tegelijkertijd uitvoeren door middel van interrupt-afhandeling. ",
+                opties: ["Juist", "Fout"],
+                correctAntwoord: "Juist"
+            },
+            {
+                type: "invul",
+                vraag: "Een ______ wordt gebruikt om digitale signalen om te zetten naar analoge signalen. ",
+                correctAntwoord: "DAC"
+            },
+            {
+                type: "juist-fout",
+                vraag: "Kan een microcontroller communiceren met een extern apparaat via een UART (Universal Asynchronous Receiver-Transmitter) zonder een kloksignaal? (Geldt voor 2 punten)",
                 opties: ["Juist", "Fout"],
                 correctAntwoord: "Juist"
             },
             {
                 type: "meerkeuze",
-                vraag: "Wat doet de z-index in CSS?  ",
-                opties: ["Verwijdert een element van de pagina ", "Bepaalt de grootte van een element", "Bepaalt de positie van een element op de Z-as (voor of achter andere elementen) ",],
-                correctAntwoord: "Bepaalt de positie van een element op de Z-as (voor of achter andere elementen) "
+                vraag: "Welke van de volgende technieken zorgt ervoor dat een microcontroller efficiënt meerdere taken kan uitvoeren zonder gebruik te maken van multithreading?(Geldt voor 2 punten)",
+                opties: ["Direct Memory Access (DMA) ", "Interrupts ", "pulse width modulation (PWM) ", "I2C ",],
+                correctAntwoord: "Interrupts"
             },
             {
                 type: "invul",
-                vraag: "Wat wordt er In CSS gebruikt om ervoor te zorgen dat een element zichzelf automatisch aanpast aan de grootte van zijn inhoud, zonder dat de afmetingen expliciet hoeven te worden gedefinieerd. ",
-                correctAntwoord: "inline-block"
+                vraag: "De communicatie tussen een microcontroller en een extern apparaat kan plaatsvinden via het ______-protocol, dat vier draden gebruikt. (Geldt voor 2 punten)",
+                correctAntwoord: "SPI"
             }
         ];
 
