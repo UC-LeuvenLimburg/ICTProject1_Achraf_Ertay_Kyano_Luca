@@ -6,7 +6,7 @@ const alleVragen = [
                 correctAntwoord: "Het proces van het omzetten van broncode naar machinecode of een uitvoerbaar bestand"
             },
             {
-                type: "meerkuze",
+                type: "meerkeuze",
                 vraag: "Wat is de betekenis van refactoring in softwareontwikkeling?",
                 opties: ["Het toevoegen van nieuwe functionaliteit aan een programma", "Het verbeteren van de prestaties van een programma zonder de functionaliteit te veranderen", "Het herschrijven van de code om het gemakkelijker te begrijpen en te onderhouden",],
                 correctAntwoord: "Het herschrijven van de code om het gemakkelijker te begrijpen en te onderhouden"
