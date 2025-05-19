@@ -33,12 +33,10 @@ function rollDice() {
         dice.style.transform = `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg)`;
         result.textContent = `Je hebt ${randomValue} gegooid!`;
 
+        // Automatisch navigeren na 2 seconden
         setTimeout(() => {
-            const navigeren = confirm(`Je hebt ${randomValue} gegooid! Klik OK om naar de bijbehorende pagina te gaan.`);
-            if (navigeren) {
-                window.location.href = pageDestinations[randomValue];
-            }
-        }, 500);
+            window.location.href = pageDestinations[randomValue];
+        }, 1000);
     }, 1000);
 }
 

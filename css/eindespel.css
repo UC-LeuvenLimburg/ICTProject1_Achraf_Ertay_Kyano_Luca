@@ -1,0 +1,81 @@
+/* eindespel.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #0dcaf0;
+    margin-bottom: 20px;
+}
+
+.message p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 1em;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    color: white;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-home {
+    background-color: #0dcaf0;
+}
+
+.btn-home:hover {
+    background-color: #000000;
+}
+
+.btn-replay {
+    background-color: #0dcaf0;
+}
+
+.btn-replay:hover {
+    background-color: #000000;
+}
+
+/* Optional: Fade-in effect */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
