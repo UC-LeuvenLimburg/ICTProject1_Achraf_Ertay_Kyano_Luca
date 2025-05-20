@@ -91,8 +91,8 @@ body {
 button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color:#0dcaf0 ;
-    color: white;
+    background-color:#000000 ;
+    color: #0dcaf0;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -100,7 +100,8 @@ button {
 }
 
 button:hover {
-    background-color: #000000;
+    background-color: #0dcaf0;
+    color: rgb(255, 255, 255);
 }
 
 .result {
@@ -112,11 +113,12 @@ button:hover {
     margin-top: 80px;
     
     padding: 10px 20px;
-    background-color: #0dcaf0;
-    color: white;
+    background-color: #000000;
+    color: #0dcaf0;
     text-decoration: none;
     border-radius: 5px;
 }
 #backButton:hover {
-  background-color: black; 
+  background-color: #0dcaf0; 
+  color: rgb(255, 255, 255);
 }

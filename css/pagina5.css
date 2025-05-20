@@ -27,3 +27,27 @@ body {
         a:hover {
             background-color: #000000;
         }	
+
+
+        .custom-button {
+       background-color: black;
+      color: #00cfff; /* Helder cyaan/blauw */
+      border: none;
+      border-radius: 12px;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-family: sans-serif;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .custom-button:hover {
+      background-color: #00cfff; /* Cyaan/blauw */
+      color: rgb(255, 255, 255);
+    }
+
+    .custom-text {
+      font-weight:bold ;
+      color: #000000;
+    }
