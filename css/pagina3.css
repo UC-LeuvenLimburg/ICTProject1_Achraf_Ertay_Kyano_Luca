@@ -1,52 +1,269 @@
+body::before, body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+body::before {
+    left: 0;
+    background-image: 
+        linear-gradient(to bottom, transparent, transparent),
+        repeating-linear-gradient(30deg, 
+            rgba(25, 118, 210, 0.05) 0px, 
+            rgba(25, 118, 210, 0.05) 20px,
+            transparent 20px, 
+            transparent 40px);
+}
+
+body::after {
+    right: 0;
+    background-image: 
+        linear-gradient(to bottom, transparent, transparent),
+        repeating-linear-gradient(-30deg, 
+            rgba(63, 81, 181, 0.05) 0px, 
+            rgba(63, 81, 181, 0.05) 20px,
+            transparent 20px, 
+            transparent 40px);
+}
+
+/* Circuit board decorative pattern */
+.circuit-decoration {
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+.circuit-decoration.left {
+    left: 0;
+    background-image: 
+        radial-gradient(circle at 30% 20%, #1976d2 1px, transparent 1px),
+        radial-gradient(circle at 70% 45%, #1976d2 1px, transparent 1px),
+        radial-gradient(circle at 40% 70%, #1976d2 1px, transparent 1px),
+        linear-gradient(90deg, transparent 49%, #1976d2 49%, #1976d2 51%, transparent 51%),
+        linear-gradient(0deg, transparent 49%, #1976d2 49%, #1976d2 51%, transparent 51%);
+    background-size: 50px 50px, 50px 50px, 50px 50px, 20px 20px, 20px 20px;
+}
+
+.circuit-decoration.right {
+    right: 0;
+    background-image: 
+        radial-gradient(circle at 30% 30%, #3f51b5 1px, transparent 1px),
+        radial-gradient(circle at 70% 65%, #3f51b5 1px, transparent 1px),
+        radial-gradient(circle at 40% 40%, #3f51b5 1px, transparent 1px),
+        linear-gradient(45deg, transparent 49%, #3f51b5 49%, #3f51b5 51%, transparent 51%),
+        linear-gradient(-45deg, transparent 49%, #3f51b5 49%, #3f51b5 51%, transparent 51%);
+    background-size: 40px 40px, 40px 40px, 40px 40px, 30px 30px, 30px 30px;
+}/* Main styling */
 body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #ffffff;
-        }
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f0f8ff;
+    background-image: 
+        radial-gradient(circle at 15% 50%, rgba(25, 118, 210, 0.1) 0%, rgba(25, 118, 210, 0) 25%),
+        radial-gradient(circle at 85% 30%, rgba(48, 63, 159, 0.1) 0%, rgba(48, 63, 159, 0) 25%),
+        linear-gradient(60deg, rgba(41, 121, 255, 0.1) 0%, rgba(41, 121, 255, 0) 50%),
+        linear-gradient(-60deg, rgba(66, 66, 255, 0.1) 0%, rgba(66, 66, 255, 0) 50%);
+    position: relative;
+    overflow-x: hidden;
+}
 
-        h1 {
-            font-size: 2em;
-            color: darkblue;
-            font-weight: bold;
-        }
+/* Header styling */
+h1 {
+    font-size: 2.2rem;
+    color: #1a237e;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 3px solid #1a237e;
+    padding-bottom: 10px;
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+}
 
-        a {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: darkblue;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+    background-color: #3f51b5;
+}
 
-        a:hover {
-            background-color: #000000;
-   
-        }
-      .custom-button {
-       background-color: black;
-      color: #00cfff; /* Helder cyaan/blauw */
-      border: none;
-      border-radius: 12px;
-      padding: 12px 24px;
-      font-size: 16px;
-      font-family: sans-serif;
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: background-color 0.3s ease;
+/* Paragraph styling */
+p {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Quiz container */
+#quiz-container {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    border-left: 5px solid #3f51b5;
+    border-right: 5px solid #3f51b5;
+}
+
+/* Question styling */
+.question {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input styling */
+input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #1a237e;
+    outline: none;
+    box-shadow: 0 0 5px rgba(26, 35, 126, 0.3);
+}
+
+/* Button styling */
+button {
+    background-color: #1a237e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #303f9f;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Custom button styling */
+.custom-button {
+    background-color: #1a237e;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.custom-button:hover {
+    background-color: #303f9f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Custom text styling */
+.custom-text {
+    font-weight: bold;
+    color: #303f9f;
+    margin: 25px 0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Popup container */
+#popup-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #e3f2fd;
+    position: relative;
+}
+
+#popup-container::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-top: 2px solid #e3f2fd;
+    border-left: 2px solid #e3f2fd;
+}
+
+#vraag-text {
+    font-weight: 600;
+    color: #1a237e;
+    margin-bottom: 15px;
+}
+
+#antwoord-container {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #e3f2fd;
+    border-radius: 8px;
+}
+
+#feedback {
+    font-style: italic;
+    color: #4caf50;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
     }
-
-    .custom-button:hover {
-      background-color: #00cfff; /* Cyaan/blauw */
-      color: rgb(255, 255, 255);
+    
+    #quiz-container {
+        padding: 20px;
     }
-
-    .custom-text {
-      font-weight:bold ;
-      color: #000000;
+    
+    .question {
+        font-size: 1.1rem;
     }
+}

@@ -1,51 +1,326 @@
- body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #ffffff;
-        }
+/* Main styling */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fff5f5;
+    background-image: 
+        radial-gradient(circle at 15% 50%, rgba(211, 47, 47, 0.1) 0%, rgba(211, 47, 47, 0) 25%),
+        radial-gradient(circle at 85% 30%, rgba(183, 28, 28, 0.1) 0%, rgba(183, 28, 28, 0) 25%),
+        linear-gradient(60deg, rgba(229, 57, 53, 0.1) 0%, rgba(229, 57, 53, 0) 50%),
+        linear-gradient(-60deg, rgba(198, 40, 40, 0.1) 0%, rgba(198, 40, 40, 0) 50%);
+    position: relative;
+    overflow-x: hidden;
+}
 
-        h1 {
-            font-size: 2em;
-            color: red;
-            font-weight: bold;
-        }
+/* Add decorative elements to the sides */
+body::before, body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
 
-        a {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: red;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
+body::before {
+    left: 0;
+    background-image: 
+        linear-gradient(to bottom, transparent, transparent),
+        repeating-linear-gradient(30deg, 
+            rgba(211, 47, 47, 0.05) 0px, 
+            rgba(211, 47, 47, 0.05) 20px,
+            transparent 20px, 
+            transparent 40px);
+}
 
-        a:hover {
-            background-color: #000000;
-        }
-        .custom-button {
-       background-color: black;
-      color: #00cfff; /* Helder cyaan/blauw */
-      border: none;
-      border-radius: 12px;
-      padding: 12px 24px;
-      font-size: 16px;
-      font-family: sans-serif;
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: background-color 0.3s ease;
+body::after {
+    right: 0;
+    background-image: 
+        linear-gradient(to bottom, transparent, transparent),
+        repeating-linear-gradient(-30deg, 
+            rgba(183, 28, 28, 0.05) 0px, 
+            rgba(183, 28, 28, 0.05) 20px,
+            transparent 20px, 
+            transparent 40px);
+}
+
+/* Programming-themed decorative pattern */
+.programming-decoration {
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+.programming-decoration.left {
+    left: 0;
+    background-image: 
+        radial-gradient(circle at 30% 20%, #d32f2f 1px, transparent 1px),
+        radial-gradient(circle at 70% 45%, #d32f2f 1px, transparent 1px),
+        radial-gradient(circle at 40% 70%, #d32f2f 1px, transparent 1px),
+        linear-gradient(90deg, transparent 49%, #d32f2f 49%, #d32f2f 51%, transparent 51%),
+        linear-gradient(45deg, transparent 49%, #d32f2f 49%, #d32f2f 51%, transparent 51%);
+    background-size: 50px 50px, 50px 50px, 50px 50px, 20px 20px, 30px 30px;
+}
+
+.programming-decoration.right {
+    right: 0;
+    background-image: 
+        radial-gradient(circle at 30% 30%, #b71c1c 1px, transparent 1px),
+        radial-gradient(circle at 70% 65%, #b71c1c 1px, transparent 1px),
+        radial-gradient(circle at 40% 40%, #b71c1c 1px, transparent 1px),
+        linear-gradient(135deg, transparent 49%, #b71c1c 49%, #b71c1c 51%, transparent 51%),
+        linear-gradient(-135deg, transparent 49%, #b71c1c 49%, #b71c1c 51%, transparent 51%);
+    background-size: 40px 40px, 40px 40px, 40px 40px, 25px 25px, 25px 25px;
+}
+
+/* Header styling */
+h1 {
+    font-size: 2.2rem;
+    color: #b71c1c;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 3px solid #b71c1c;
+    padding-bottom: 10px;
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+    background-color: #d32f2f;
+}
+
+/* Paragraph styling */
+p {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Programming links styling */
+a {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d32f2f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+a:hover {
+    background-color: #b71c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Button styling */
+.custom-button {
+    background-color: #d32f2f;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.custom-button:hover {
+    background-color: #b71c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Custom text styling */
+.custom-text {
+    font-weight: bold;
+    color: #d32f2f;
+    margin: 25px 0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Popup container */
+#popup-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #ffebee;
+    position: relative;
+}
+
+#popup-container::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-top: 2px solid #ffebee;
+    border-left: 2px solid #ffebee;
+}
+
+#vraag-text {
+    font-weight: 600;
+    color: #b71c1c;
+    margin-bottom: 15px;
+}
+
+#antwoord-container {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #ffebee;
+    border-radius: 8px;
+}
+
+#feedback {
+    font-style: italic;
+    color: #2e7d32;
+}
+
+/* Quiz container - zichtbaar maken */
+#quiz-container {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    border-left: 5px solid #d32f2f;
+    border-right: 5px solid #d32f2f;
+}
+
+/* Question styling */
+.question {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Answer buttons container */
+.answer-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Answer button styling */
+.answer-button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    min-width: 120px;
+    text-align: center;
+}
+
+.answer-button:hover {
+    background-color: #b71c1c;
+    transform: translateY(-2px);
+}
+
+.answer-button:active {
+    transform: translateY(0);
+}
+
+/* Input styling */
+input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #d32f2f;
+    outline: none;
+    box-shadow: 0 0 5px rgba(211, 47, 47, 0.3);
+}
+
+/* Button styling */
+button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #b71c1c;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
     }
-
-    .custom-button:hover {
-      background-color: #00cfff; /* Cyaan/blauw */
-      color: rgb(255, 255, 255);
+    
+    .content-container {
+        padding: 20px;
     }
-
-    .custom-text {
-      font-weight:bold ;
-      color: #000000;
+    
+    .programming-decoration {
+        width: 10%;
     }
+}

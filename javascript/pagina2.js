@@ -117,5 +117,5 @@ const alleVragen = [
             // Ga na 2 seconden terug naar dobbelsteenpagina
             setTimeout(() => {
                 window.location.href = "/html/dobbelsteen.html";
-            }, 1000);
+            }, 2000);
         }
